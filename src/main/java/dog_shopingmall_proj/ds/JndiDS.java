@@ -11,7 +11,7 @@ public class JndiDS {
 	static { // 1이거 먼저 실행되고
 		try {
 			InitialContext ic = new InitialContext();
-			ds = (DataSource) ic.lookup("java:comp/env/jdbc/shoppingmall");
+			ds = (DataSource) ic.lookup("java:comp/env/jdbc/dog_shopingmall_proj");
 			System.out.println("ds:" + ds);
 
 		} catch (Exception e) {
@@ -29,5 +29,23 @@ public class JndiDS {
 			e.printStackTrace();
 		}
 		return null;
+	}
+	//commit 성공시
+	public static void commit(Connection con) {
+		try {
+			con.commit();
+			System.out.println("commit success");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	//rollback 성공시
+	public static void rollback(Connection con) {
+		try {
+			con.commit();
+			System.out.println("rollback success");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

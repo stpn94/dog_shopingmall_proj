@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
 	<Resource
-		name = "jdbc/shoppingmall"
-		username = "user_shopingmall"
+		name = "jdbc/dog_shopingmall_proj"
+		username = "user_shoppingmall"
 		password="rootroot"
 		url = "jdbc:mysql://localhost:3306/shoppingmall?useSSL=false"	
 		
@@ -10,7 +10,7 @@
 		type = "javax.sql.DataSource"
 		driverClassName = "com.mysql.jdbc.Driver"
 		factory = "org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
-		maxTotal="100"
-		maxIdle = "10"
+		maxTotal="100000"
+		maxIdle = "100"
 		maxWaitMillis="-1"/>
 </Context>
