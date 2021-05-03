@@ -11,6 +11,6 @@
 방가방가!
 <%=JndiDS.getConnection() %>
 Hi~~~~
-
+<a href="dogList.do">개상품목록보기</a>
 </body>
 </html>

@@ -11,5 +11,5 @@ public interface DogDAO {
 
 	int insertDog(Dog dog);
 
-	int updataReadCount(int id);
+	int updateReadCount(int id);
 }
